@@ -17,7 +17,6 @@
  $strH = str_replace(':','',$hora);
 
 
- var_dump($_SESSION['idEmpresa']);
  mysqli_query($connect,"INSERT INTO post (cod_empresa,conteudo_post,midia_post, data_post, hora_post) VALUES ('".$_SESSION['idEmpresa']."','".$_POST["conteudo-postagem"]."','".$nomeCompleto."','".$strD."','".$strH."')");
 
  header("location:../view/home.php");
